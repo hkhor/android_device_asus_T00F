@@ -51,4 +51,3 @@ void healthd_board_mode_charger_set_backlight(bool)
 
 void healthd_board_mode_charger_init()
 {
-}
