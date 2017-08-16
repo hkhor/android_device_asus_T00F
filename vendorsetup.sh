@@ -14,6 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_T00F-userdebug
-add_lunch_combo cm_T00F-eng
+add_lunch_combo lineage_T00F-userdebug
+add_lunch_combo lineage_T00F-eng
 add_lunch_combo omni_T00F-userdebug
