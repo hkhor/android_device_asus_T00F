@@ -168,6 +168,9 @@ BOARD_PROVIDES_LIBRIL := true
 TARGET_NO_TWO_STEP_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+TARGET_RECOVERY_FSTAB := device/asus/T00F/recovery/root/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_DEVICE_MODULES := libinit_ctp librecovery_updater_ctp intel_prop thermald upi_ug31xx
+
 
 # Security
 BUILD_WITH_SECURITY_FRAMEWORK := chaabi_token
@@ -203,8 +206,6 @@ BOARD_HAS_NO_REAL_SDCARD := true
 TW_INCLUDE_NTFS_3G := true
 BOARD_SUPPRESS_EMMC_WIPE := true
 RECOVERY_VARIANT := twrp
-TARGET_RECOVERY_FSTAB := device/asus/T00F/rootdir/etc/fstab.redhookbay
-TARGET_RECOVERY_DEVICE_MODULES := libinit_ctp librecovery_updater_ctp intel_prop thermald upi_ug31xx
 
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
