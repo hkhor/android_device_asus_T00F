@@ -34,7 +34,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/asus/T00F/include
 
 TARGET_DROIDBOOT_LIBS := libintel_droidboot
 
-TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/Z00D/make_recovery_patch
+TARGET_RELEASETOOL_MAKE_RECOVERY_PATCH_SCRIPT := ./device/asus/T00F/make_recovery_patch
 
 # OTA Packaging / Bootimg creation
 BOARD_CUSTOM_MKBOOTIMG := pack_intel
@@ -168,7 +168,7 @@ BOARD_PROVIDES_LIBRIL := true
 TARGET_NO_TWO_STEP_RECOVERY := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
-TARGET_RECOVERY_FSTAB := device/asus/T00F/recovery/root/recovery/root/etc/twrp.fstab
+TARGET_RECOVERY_FSTAB := device/asus/T00F/recovery.fstab
 TARGET_RECOVERY_DEVICE_MODULES := libinit_ctp librecovery_updater_ctp intel_prop thermald upi_ug31xx
 
 
