@@ -1,17 +1,16 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1280
-TARGET_SCREEN_WIDTH := 720
-
+# Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+# Inherit from our omni product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/T00F/device.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/T00F/overlay
-
-PRODUCT_RUNTIMES := runtime_libart_default
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := omni_T00F
