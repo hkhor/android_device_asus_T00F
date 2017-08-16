@@ -194,6 +194,19 @@ WIFI_DRIVER_FW_PATH_AP    := "/system/etc/firmware/fw_bcmdhd_43362_apsta.bin"
 WIFI_DRIVER_FW_PATH_STA   := "/system/etc/firmware/fw_bcmdhd_43362.bin"
 WIFI_DRIVER_MODULE_ARG := "iface_name=wlan0 firmware_path=/system/etc/firmware/fw_bcmdhd_43362.bin"
 
+# TWRP
+TW_THEME := portrait_hdpi
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_CRYPTO := true
+TW_EXCLUDE_SUPERSU := true
+TW_NO_USB_STORAGE := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_NTFS_3G := true
+BOARD_SUPPRESS_EMMC_WIPE := true
+RECOVERY_VARIANT := twrp
+TARGET_RECOVERY_FSTAB := device/asus/T00F/recovery/root/etc/twrp.fstab
+
 # Use the non-open-source parts, if they're present
 -include vendor/asus/T00F/BoardConfigVendor.mk
 
